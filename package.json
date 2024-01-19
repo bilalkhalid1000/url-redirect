@@ -1,0 +1,25 @@
+{
+  "name": "url-redirect",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Bilal Khalid",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": ">= 16"
+  },
+  "dependencies": {
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4"
+  }
+}

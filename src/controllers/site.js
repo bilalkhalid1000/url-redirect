@@ -18,16 +18,18 @@ exports.index = async (req, res) => {
  */
 exports.redirect = async (req, res) => {
   try {
-    const domain = req.hostname
-    console.log(domain)
+    // const domain = req.hostname
+    // console.log(domain)
 
-    switch (domain) {
-      case 'bilalkhalid.dev':
-        return res.redirect('https://www.linkedin.com/in/bilal-khalid-3b8445148/')
+    // switch (domain) {
+    //   case 'bilalkhalid.dev':
+    //     return res.redirect('https://www.linkedin.com/in/bilal-khalid-3b8445148/')
 
-      default:
-        return res.status(404).json({ message: 'Not found' })
-    }
+    //   default:
+    //     return res.status(404).json({ message: 'Not found' })
+    // }
+
+    return res.redirect('https://www.linkedin.com/in/bilal-khalid-3b8445148/')
   } catch (error) {
     return res.status(400).send({ message: error?.message ?? 'Something went wrong' })
   }

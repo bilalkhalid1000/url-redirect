@@ -2,6 +2,8 @@ const createServer = require('./src/utils/server')
 const initializeMiddleware = require('./src/utils/middleware')
 const router = require('./src/router')
 
+require('dotenv').config()
+
 /**
  * Global Variables
  */
